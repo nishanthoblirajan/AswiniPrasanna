@@ -9,7 +9,7 @@
         <title>Aswini and Prasanna</title>
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <link href="animate.css" rel="stylesheet">
+        <link href="aos.css" rel="stylesheet">
         <!-- Custom styles for this template -->
         <link href="style.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -55,19 +55,19 @@
         <style></style>
         <!-- Container element -->
         <div class="parallax1">
-            <div class="container pt-5">
-                <h1 class="animated fadeIn" style="text-align: center;">ASWINI &amp; PRASANNA</h1>
-                <h3 class="animated fadeIn" style="text-align: center;">Are Getting Married</h3>
+            <div class="container pt-5"> 
+                <h1 data-aos="fade" style="text-align: center;">ASWINI &amp; PRASANNA</h1> 
+                <h3 data-aos="fade" style="text-align: center;">Are Getting Married</h3> 
             </div>
         </div>
         <div class="container-fluid pb-auto" style="text-align: center;
-    background-color: #f5baba;">
-            <h1 style="text-align: center;
+    background-color: #f5baba;"> 
+            <h1 data-aos="slide-right" style="text-align: center;
     padding-top: 24px;
-    padding-bottom: 24px;" class="animated slideInLeft">INVITATION</h1>
-            <h3 style="text-align: center;
-    padding-bottom: 24px;" class="animated fadeIn">We invite you to celebrate our marriage</h3>
-            <img src="images/ims (2).jpg" class="img-fluid position-sticky " width="60%">
+    padding-bottom: 24px;">INVITATION</h1> 
+            <h3 data-aos="fade" style="text-align: center;
+    padding-bottom: 24px;">We invite you to celebrate our marriage</h3> 
+            <img src="images/ims (2).jpg" class="img-fluid position-sticky " width="60%"> 
         </div>
         <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -75,16 +75,7 @@
         <div class="container">
             <div class="row pt-5 pb-5">
                 <div class="col-md-6 text-center">
-                    <h3 class="animated fadeIn">THE RECEPTION</h3> 
-                    <h4 class="animated fadeIn">
-                        March 2018  </h4>
-                    <h2 class="animated fadeIn">
-                        03 </h2>
-                    <h3 class="animated fadeIn">
-                        Saturday<br>6:30 PM Onwards </h3>
-                </div>
-                <div class="col-md-6 text-center">
-                    <h3>THE RECEPTION</h3> 
+                    <h3 data-aos="slide-left">THE RECEPTION</h3> 
                     <h4>
                         March 2018  </h4>
                     <h2>
@@ -92,10 +83,19 @@
                     <h3>
                         Saturday<br>6:30 PM Onwards </h3>
                 </div>
+                <div class="col-md-6 text-center">
+                    <h3 data-aos="slide-left">THE WEDDING</h3> 
+                    <h4>
+                        March 2018  </h4>
+                    <h2>
+                        04 </h2>
+                    <h3>
+                        Sunday<br>6:30 PM Onwards </h3>
+                </div>
             </div>
         </div>
         <div class="parallax2">
-            <div class="container pt-4">
+            <div class="container pt-4" data-aos="fade">
                 <h1 style="text-align: center;">VENUE</h1>
                 <h3 style="text-align: center;">Raja Manickam Thirumana Mandapam Neikarapatti Salem 636010</h3>
             </div>
@@ -110,9 +110,9 @@
         </div>
         <div class="container pt-5">
             <h3 style="text-align: center;">FIND YOUR WAY</h3>
-            <div class="media-container-row">
+            <div class="media-container-row pb-0">
                 <div class="text-center">
-                    <div class="google-map">
+                    <div class="google-map w-100">
                         <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJDw0oSivwqzsRNawPuK1vock" allowfullscreen=""></iframe>
                     </div>
                 </div>
@@ -126,7 +126,11 @@
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="aos.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script>
+    AOS.init();
+  </script>
     </body>
 </html>
