@@ -5,47 +5,6 @@ html {
     font: 400 15px/1.8 "Lato", sans-serif;
     color: #777;
 }
-
-/* .bgimg-1,
-.bgimg-2,
-.bgimg-3 {
-    position: relative;
-    opacity: 0.65;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bgimg-1 {
-    background-image: url("images/ims (1).jpg");
-    min-height: 120%;
-}
-
-.bgimg-2 {
-    background-image: url("images/ims (2).jpg");
-    min-height: 400px;
-}
-
-.bgimg-3 {
-    background-image: url("images/ims (3).jpg");
-    min-height: 400px;
-}
-
-h3 {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font: 20px "Lato", sans-serif;
-    color: #111;
-} */
-/* Turn off parallax scrolling for tablets and phones */
-/* @media only screen and (max-device-width: 1024px) {
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-        background-attachment: scroll;
-    }
-} */
 .parallax1 {
     /* The image used */
     background-image: url("pics/star.jpg");
@@ -101,7 +60,7 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+/*
 #cf {
     position: relative;
     height: 281px;
@@ -120,4 +79,4 @@ h3 {
 
 #cf img.top:hover {
     opacity: 0;
-}
+} */

@@ -23,18 +23,16 @@
     </head>
     <body>
         <!-- Container element -->
-
-        <div class="parallax1">
+        <div class="parallax-window" data-parallax="scroll" data-image-src="pics/star.jpg" style="height: 700px;">
             <div class="container pt-5 align-self-end order-1">
                 <h1 style="text-align: center;
     font-family: Raleway;
-    letter-spacing: 16px;" class="text-light bg-dark">ASWINI &amp; Prasena</h1>
-                <h3 data-aos="fade" style="text-align: center;
+    letter-spacing: 16px;" class="text-light bg-dark">ASWINI &amp; PRASENA</h1>
+                <h3 style="text-align: center;
     font-family: Great Vibes;
     text-transform: capitalize;" class="text-white bg-dark">Are Getting Married</h3>
             </div>
         </div>
-
         <div class="container-fluid pb-auto pb-xl-5 " style="text-align: center;
     background-color: #f5e9e8;">
             <h2 data-aos="fade" data-aos-duration="3000" style="text-align: center;
@@ -65,7 +63,6 @@
                 </div>
             </div>
         </div>
-
         <div class="container mt-xl-5 pt-xl-5">
             <div class="row pt-5 pb-5">
                 <div class="col-md-6 text-center">
@@ -125,24 +122,21 @@ followed by lunch</h6>
                 </div>
             </div>
         </div>
-
-        <div class="parallax2">
+        <div class="parallax-window" data-parallax="scroll" data-image-src="pics/twopicbw.jpg" style="height: 300px;">
             <div class="container pt-4" data-aos="zoom-in" data-aos-duration="1500">
                 <h3 style="text-align: center;
-    color: #000000;" class="bg-dark text-white"><b style="font-size: 28px;">VENUE</b></h3>
+            color: #000000;" class="bg-dark text-white"><b style="font-size: 28px;">VENUE</b></h3>
                 <p style="text-align: center;
-    font-size: 22px;" class="bg-dark text-white">Raja Manickam Thirumana Mandapam Neikarapatti Salem 636010</p>
+            font-size: 22px;" class="bg-dark text-white">Raja Manickam Thirumana Mandapam Neikarapatti Salem 636010</p>
             </div>
         </div>
-
-        <div class="parallax3"></div>
-
+        <div class="parallax-window" data-parallax="scroll" data-image-src="pics/star.jpg" style="height: 200px;">
+</div>
         <div id="video-wrap" class="video-wrap">
             <video preload="metadata" autoplay loop id="my-video">
                 <source src="pics/achurenIP_2.mp4" type="video/mp4">
             </video>
         </div>
-
         <div class="container pt-5 text-truncate">
             <h5 data-aos="zoom-out" style="text-align: center;
     font-family: Montserrat;
@@ -152,8 +146,8 @@ followed by lunch</h6>
     font-size: 25px;" class="text-dark text-nowrap">Find your way</h5>
             <div class="media-container-row pb-0">
                 <div class="text-center">
-                    <div class="google-map w-100" style="align-self: center;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15630.5922043718!2d78.1507422!3d11.64840905!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babe56173029db7%3A0x66da8a314e9f7a27!2sRajamanickam+Vel+Gounder+Thirumana+Mahal+A%2FC!5e0!3m2!1sen!2sin!4v1517567294605" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                    <div class="google-map w-100 mw-100 mh-100" style="align-self: center;">
+                        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15630.5922043718!2d78.1507422!3d11.64840905!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babe56173029db7%3A0x66da8a314e9f7a27!2sRajamanickam+Vel+Gounder+Thirumana+Mahal+A%2FC!5e0!3m2!1sen!2sin!4v1517567294605"></iframe>
                     </div>
                 </div>
             </div>
@@ -166,9 +160,7 @@ followed by lunch</h6>
     font-style: italic;
     font-size: 20px;" class="mt-4 mb-4">Contact us at +91 9994444328&nbsp;&nbsp;<a href="tel:+91 9994444328"><i class="fa fa-phone text-dark"></i></a></h6>
         </div>
-
         <div class="parallax4"></div>
-
         <div class="container-fluid pt-5" style="padding-bottom: 42px;
     background-color: #f5e9e8;">
             <h1 data-aos="zoom-in" style="text-align: center;
@@ -178,29 +170,29 @@ followed by lunch</h6>
     padding-top: 20px;
     padding-bottom: 21px;" class="text-dark">Thank You</h1>
         </div>
-
         <script src="assets/js/jquery.min.js"></script>
-
         <script src="backgroundVideo.js"></script>
-
         <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-
         <script src="assets/js/popper.js"></script>
-
         <script src="bootstrap/js/bootstrap.min.js"></script>
-
         <script src="aos.js"></script>
-
         <script type="text/javascript" src="jquery.imageScroll.js"></script>
-
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-
+        <script src="parallax.js"></script>
         <script>
     AOS.init();
     $('#my-video').backgroundVideo();
-
+    if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+            $('#ios-notice').removeClass('hidden');
+            $('.parallax-container').height( $(window).height() * 0.5 | 0 );
+          } else {
+            $(window).resize(function(){
+              var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+              $('.parallax-container').height(parallaxHeight);
+            }).trigger('resize');
+          }
+        });
   </script>
     </body>
 </html>
