@@ -10,16 +10,10 @@
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
         <link href="aos.css" rel="stylesheet">
-        <link href="jarallax/jarallax.css" rel="stylesheet">
         <!-- Custom styles for this template -->
         <link href="style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Cookie|Dancing+Script|Great+Vibes|Merriweather+Sans|Montserrat|Satisfy|Quicksand
 |Nunito|Raleway:600" rel="stylesheet">
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     </head>
     <body>
@@ -95,7 +89,7 @@ Sri Rajhesh Vaidhya
 followed by dinner </h4>
                 </div>
                 <div class="col-md-6 text-center flex-nowrap">
-                    <h4 data-aos-duration="1500" data-aos="slide-left" style="font-family: Montserrat;
+                    <h4 data-aos-duration="1500" data-aos="fade" style="font-family: Montserrat;
     text-align: left;
     color: #000000;
     letter-spacing: 8px;
@@ -134,8 +128,8 @@ followed by lunch</h6>
         <div class="parallax-container" data-parallax="scroll" data-image-src="pics/star.jpg" style="height: 200px;">
 </div>
         <div id="video-wrap" class="video-wrap">
-            <video preload="metadata" autoplay loop id="my-video">
-                <source src="pics/achurenIP_2.mp4" type="video/mp4">
+            <video preload="metadata" autoplay loop id="my-video" class="d-flex">
+                <source src="pics/achurenIP_2.webm" type="video/webm" class="d-flex">
             </video>
         </div>
         <div class="container pt-5 text-truncate">
@@ -172,15 +166,13 @@ followed by lunch</h6>
     padding-bottom: 21px;" class="text-dark">Thank You</h1>
         </div>
         <script src="assets/js/jquery.min.js"></script>
-        <script src="backgroundVideo.js"></script>
-        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
         <script src="assets/js/popper.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="aos.js"></script>
-        <script type="text/javascript" src="jquery.imageScroll.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
         <script src="parallax.js"></script>
+        <script src="backgroundVideo.js"></script>
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
         <script>
 
 
@@ -196,6 +188,9 @@ followed by lunch</h6>
             }).trigger('resize');
           }
         });
+
+
+
 
   </script>
     </body>
