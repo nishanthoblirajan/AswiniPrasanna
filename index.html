@@ -9,12 +9,12 @@
         <title>Aswini and Prasena</title>
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <link href="aos.css" rel="stylesheet">
         <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="aos.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Cookie|Dancing+Script|Great+Vibes|Merriweather+Sans|Montserrat|Satisfy|Quicksand
 |Nunito|Raleway:600" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     </head>
     <body>
         <!-- Container element -->
@@ -136,9 +136,7 @@ followed by lunch</h6>
             <h5 data-aos="zoom-out" style="text-align: center;
     font-family: Montserrat;
     text-transform: uppercase;
-    color: #050000;
-    letter-spacing: 21px;
-    font-size: 25px;" class="text-dark text-nowrap">Find your way</h5>
+    color: #050000;" class="text-dark float-none">Find your way</h5>
             <div class="media-container-row pb-0">
                 <div class="text-center">
                     <div class="google-map w-100 mw-100 mh-100" style="align-self: center;">
@@ -169,29 +167,10 @@ followed by lunch</h6>
         <script src="assets/js/popper.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="aos.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="parallax.js"></script>
-        <script src="backgroundVideo.js"></script>
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
         <script>
-
-
     AOS.init();
-    $('#my-video').backgroundVideo();
-    if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
-            $('#ios-notice').removeClass('hidden');
-            $('.parallax-container').height( $(window).height() * 0.5 | 0 );
-          } else {
-            $(window).resize(function(){
-              var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
-              $('.parallax-container').height(parallaxHeight);
-            }).trigger('resize');
-          }
-        });
-
-
-
-
   </script>
     </body>
 </html>
